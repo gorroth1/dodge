@@ -10,11 +10,11 @@ DogeDodge.Play.prototype = {
 
   init: function () {
     console.log("%c~~~Booting the DogeDodge ~~~\n Compliments of Skilstak",
-                "color:#fdf6e3; backround:#073642");
+                "color:#fdf6e3; background:#073642");
   },
 
   preload: function () {
-    this.load.image('backround','assets/backround.png');
+    this.load.image('background','assets/backround.png');
 
   },
 
