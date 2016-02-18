@@ -14,7 +14,7 @@ DogeDodge.Play.prototype = {
   },
 
   preload: function () {
-    this.load.image('background','assets/backround.png');
+    this.load.image('background','assets/background.png');
 
   },
 
