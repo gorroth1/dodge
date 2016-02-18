@@ -27,3 +27,4 @@ DogeDodge.Play.prototype = {
   update: function (){
 
   }
+};
