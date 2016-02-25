@@ -15,16 +15,22 @@ DogeDodge.Play.prototype = {
 
   preload: function () {
     this.load.image('background','assets/background.png');
+    this.load.spritesheet('dodger','assets/dodger.png',46,64,2);
 
   },
 
   create: function () {
     this.background = this.add.tileSprite(0,0,320,568,"background");
-    this.background.autoScroll(0,-50);
+    this.background.autoScroll(0,50);
     this.background.scale.set(1);
+    this.dodger = this.add.sprite(160,510,'dodger');
+    this.dodger.anchor.set(0.5,0.5);
+    this.dodger.animations.add('blink');
+    this.dodger.checkWorldBounds = true;
+
+    this.cursors = game.input.keyboard.creatCursorKeys();
   },
-
   update: function (){
-
   }
 };
+
