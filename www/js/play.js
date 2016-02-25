@@ -28,7 +28,7 @@ DogeDodge.Play.prototype = {
     this.dodger.animations.add('blink');
     this.dodger.checkWorldBounds = true;
 
-    this.cursors = game.input.keyboard.creatCursorKeys();
+    this.cursors = game.input.keyboard.createCursorKeys();
   },
   update: function (){
     if (this.cursors.left.isDown) { 
