@@ -31,6 +31,14 @@ DogeDodge.Play.prototype = {
     this.cursors = game.input.keyboard.creatCursorKeys();
   },
   update: function (){
+    if (this.cursors.left.isDown) { 
+      this.dodger.x -= 10;
+    }
+    if (this.cursors.right.isDown) {
+      this.dodger.x += 10;
+    }
   }
 };
+
+
 
