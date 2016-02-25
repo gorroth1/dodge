@@ -15,7 +15,7 @@ DogeDodge.Play.prototype = {
 
   preload: function () {
     this.load.image('background','assets/background.png');
-    this.load.spritesheet('dodger','assets/dodger.png',46,64,2);
+    this.load.spritesheet('dodger','assets/dodger.png',12,12,2);
 
   },
 
@@ -26,7 +26,7 @@ DogeDodge.Play.prototype = {
     this.dodger = this.add.sprite(160,510,'dodger');
     this.dodger.anchor.set(0.5,0.5);
     this.dodger.animations.add('blink');
-    this.dodger.checkWorldBounds = true;
+    this.dodger.animations.play('blink',2,true);
 
     this.cursors = game.input.keyboard.createCursorKeys();
   },
