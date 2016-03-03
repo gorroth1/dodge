@@ -16,7 +16,7 @@ DogeDodge.Play.prototype = {
   preload: function () {
     this.load.image('background','assets/background.png');
     this.load.spritesheet('dodger','assets/dodger.png',40,40,2);
-    this.load.spritesheet('fallingobject','assets/fallingobjext.png',35,35,1);
+    this.load.spritesheet('fallingobject','assets/fallingobject.png',35,35,1);
 
   },
 
@@ -39,6 +39,8 @@ DogeDodge.Play.prototype = {
     this.fallingobject.anchor.set(0.5,0.5);
     this.fallingobject.animations.add('blink');
     this.fallingobject.animations.play('blink',2,true);
+    
+    
     this.cursors = game.input.keyboard.createCursorKeys();
 
   },
