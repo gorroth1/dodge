@@ -33,7 +33,7 @@ DogeDodge.Play.prototype = {
     this.dodger.animations.add('blink');
     this.dodger.animations.play('blink',2,true);
 
-    this.fallingobject = this.add.sprite(160,50,'dodger');
+    this.fallingobject = this.add.sprite(160,50,'falingobject');
     this.fallingobject.smoothed = false;
     this.fallingobject.scale.set(2);
     this.fallingobject.anchor.set(0.5,0.5);
