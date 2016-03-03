@@ -17304,6 +17304,23 @@ PIXI.WebGLRenderer.prototype.renderDisplayObject = function(displayObject, proje
     //set the default offset
     this.renderSession.offset = this.offset;
 
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
+    // s
     // start the sprite batch
     this.spriteBatch.begin(this.renderSession);
 
