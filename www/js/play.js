@@ -44,12 +44,18 @@ DogeDodge.Play.prototype = {
     this.cursors = game.input.keyboard.createCursorKeys();
 
   },
-  update: function (){
+  update: function() {
+    this.fallingobject.y += 5;
+
     if (this.cursors.left.isDown) { 
       this.dodger.x -= 10;
     }
     if (this.cursors.right.isDown) {
       this.dodger.x += 10;
+    }
+    if (this.fallingobject.y >568) {
+      this.fallingobject.y = -10
+      this.fallingobject.x = game.rnd.integerInRange(1,320);
     }
   }
 };
