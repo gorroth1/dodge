@@ -45,7 +45,7 @@ DogeDodge.Play.prototype = {
 
   },
   update: function() {
-    this.fallingobject.y += 8;
+    this.fallingobject.y += 12;
 
     if (this.cursors.left.isDown) { 
       this.dodger.x -= 10;
