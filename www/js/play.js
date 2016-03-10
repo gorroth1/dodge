@@ -56,7 +56,7 @@ DogeDodge.Play.prototype = {
     if (this.fallingobject.y >568) {
       this.fallingobject.y = -10
       this.fallingobject.x = game.rnd.integerInRange(1,320);
-    
+    }    
     function isCollide(fallingobject, dodger) {
       return !(
         ((fallingobject.y + fallingobject.height) < (dodger.y)) ||
@@ -69,6 +69,7 @@ DogeDodge.Play.prototype = {
     }
   }
 };
+
 
 
 
