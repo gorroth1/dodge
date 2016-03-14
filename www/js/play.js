@@ -45,28 +45,22 @@ DogeDodge.Play.prototype = {
 
   },
   update: function() {
-    this.fallingobject.y += 12;
+    this.fallingobject.y += 20;
 
     if (this.cursors.left.isDown) { 
-      this.dodger.x -= 10;
+      this.dodger.x -= 20;
     }
     if (this.cursors.right.isDown) {
-      this.dodger.x += 10;
+      this.dodger.x += 20;
     }
     if (this.fallingobject.y >568) {
       this.fallingobject.y = -10
       this.fallingobject.x = game.rnd.integerInRange(1,320);
     }    
-    function isCollide(fallingobject, dodger) {
-      console.log(
-        ((fallingobject.y + fallingobject.height) < (dodger.y)) ||
-        (fallingobject.y > (dodger.y + dodger.height)) ||
-        ((fallingobject.x + fallingobject.width) < dodger.g) ||
-        (fallingobject.x > (dodger.x + dodger.width))
-      );
+    
   
 
-    }
+    
   }
 };
 
