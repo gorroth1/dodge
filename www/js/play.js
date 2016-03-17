@@ -52,7 +52,7 @@ DogeDodge.Play.prototype = {
 
     if (this.cursors.left.isDown) { 
 
-      this.dodger.body.velocity.x =-1200;
+      this.dodger.body.velocity.x = -1200;
     }
     if (this.cursors.right.isDown) {
       this.dodger.velocity.x = 1220;
