@@ -78,7 +78,7 @@ DogeDodge.Play.prototype = {
       this.dodger.body.velocity.x = -200;
     }
     if (this.cursors.right.isDown) {
-      this.dodger.body.velocity.x = 200;
+      this.dodger.body.velocity.x = 600;
     }
     if (this.fallingobject.y >= 568) {
       this.fallingobject.y = -32;
