@@ -75,7 +75,7 @@ DogeDodge.Play.prototype = {
 
   update: function() {
     if (this.cursors.left.isDown) {
-      this.dodger.body.velocity.x = -200;
+      this.dodger.body.velocity.x = -600;
     }
     if (this.cursors.right.isDown) {
       this.dodger.body.velocity.x = 600;
