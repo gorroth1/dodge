@@ -80,9 +80,9 @@ DogeDodge.Play.prototype = {
     if (this.cursors.right.isDown) {
       this.dodger.body.velocity.x = 200;
     }
-    if (this.dodge.y >= 568) {
-      this.dodge.y = -32;
-      this.dodge.x = game.rnd.integerInRange(0,320);
+    if (this.fallingobject.y >= 568) {
+      this.fallingobject.y = -32;
+      this.fallingobject.x = game.rnd.integerInRange(0,320);
     }
   }
 
