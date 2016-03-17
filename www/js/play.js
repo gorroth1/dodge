@@ -32,6 +32,8 @@ DogeDodge.Play.prototype = {
     this.dodger.anchor.set(0.5,0.5);
     this.dodger.animations.add('blink');
     this.dodger.animations.play('blink',2,true);
+    game.physics.arcade.enable(this.dodger);
+    this.dodger.body.collideWorldBounds = true;
 
     this.fallingobject = this.add.sprite(160,50,'fallingobject');
     this.fallingobject.smoothed = false;
@@ -39,30 +41,33 @@ DogeDodge.Play.prototype = {
     this.fallingobject.anchor.set(0.5,0.5);
     this.fallingobject.animations.add('blink');
     this.fallingobject.animations.play('blink',2,true);
-    
+    game.physics.arcade.enable(this.dodge);
+    this.dodge.body.velocity.y = 1200;
     
     this.cursors = game.input.keyboard.createCursorKeys();
 
   },
-  update: function() {
-    this.fallingobject.y += 20;
+ // update: function() {
+   // this.fallingobject.y += 20;
 
-    if (this.cursors.left.isDown) { 
-      this.dodger.x -= 20;
-    }
-    if (this.cursors.right.isDown) {
-      this.dodger.x += 20;
-    }
-    if (this.fallingobject.y >568) {
-      this.fallingobject.y = -10
-      this.fallingobject.x = game.rnd.integerInRange(1,320);
-    }    
+   // if (this.cursors.left.isDown) { 
+
+      //this.dodger.x -= 20;
+   // }
+   // if (this.cursors.right.isDown) {
+     // this.dodger.x += 20;
+   // }
+   // if (this.fallingobject.y >568) {i
+     // this.fallingobject.y = -32
+      
+     // this.fallingobject.x = game.rnd.integerInRange(0,320);
+   // }    
     
   
 
     
-  }
-};
+ // }
+//};
 
 
 
